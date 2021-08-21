@@ -64,7 +64,7 @@ body {
 #position {
   text-transform: lowercase;
   font-size: 1.3rem;
-  color: rgb(78, 78, 223);
+  color: rgb(74, 74, 114);
 }
 .quotes {
   position: absolute;
@@ -73,4 +73,103 @@ body {
   font-size: 5rem;
   /* opacity: 0.5; */
   color: rgba(160, 70, 70, 0.445);
+}
+
+/* navbar */
+#menu-icon {
+  display: none;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 1em;
+}
+.website-links {
+  gap: 1.3em;
+}
+a {
+  text-decoration: none;
+  color: rgb(74, 74, 114);
+}
+nav {
+  background-color: rgba(160, 70, 70, 0.445);
+  color: rgb(74, 74, 114);
+  padding: 1.3em 0;
+}
+.header {
+  flex: 1;
+}
+#navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#links {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* media query */
+@media screen and (max-width: 600px) {
+  #menu-icon {
+    display: block;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #navigation {
+    display: block;
+  }
+  .website-links {
+    display: block;
+  }
+  #links {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .social {
+    padding-top: 0.5em;
+  }
+  #name {
+    font-size: 1em;
+  }
+  #position {
+    font-size: 0.8em;
+  }
+  .review-img {
+    height: 100px;
+    width: 100px;
+  }
+  .quotes {
+    font-size: 2rem;
+    left: 8%;
+    top: 57%;
+  }
+  #next {
+    position: absolute;
+    right: 1%;
+    top: 30%;
+  }
+  #prev {
+    position: absolute;
+    left: 1%;
+    top: 30%;
+  }
+  .btn {
+    border: 1px solid #333;
+    padding: 0.2em 0.5em;
+  }
+  #review-text {
+    font-size: 0.7rem;
+    padding-top: 0.5em;
+  }
+  .show-links {
+    height: 0;
+    overflow: hidden;
+  }
 }

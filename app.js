@@ -4,28 +4,28 @@ const reviewsData = [
     fullname: 'John Doe',
     position: 'CEO',
     review:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero necessitatibus temporibus unde repellendus facilis id possimus, cum eveniet quod nulla, iusto a debitis. Ipsa vitae deserunt quos culpa enim laboriosam perspiciatis commodi amet accusantium nobis.',
+      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero necessitatibus temporibus unde repellendus facilis id possimus, cum.',
   },
   {
     img: './img/img-2.png',
     fullname: 'Mark Miller Doe',
     position: 'Senior Developer',
     review:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero necessitatibus temporibus unde repellendus facilis id possimus, cum eveniet quod nulla, iusto a debitis. Ipsa vitae deserunt quos culpa enim laboriosam perspiciatis commodi amet accusantium nobis.',
+      'Lorem ipsum dolor, sit amet nulla, iusto a debitis. Ipsa vitae deserunt quos culpa enim laboriosam perspiciatis commodi amet accusantium nobis.',
   },
   {
     img: './img/img-3.jpeg',
     fullname: 'Kelly Clarkson',
     position: 'Designer',
     review:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero necessitatibus temporibus unde repellendus facilis id possimus, cum eveniet quod nulla, iusto a debitis. Ipsa vitae deserunt quos culpa enim laboriosam perspiciatis commodi amet accusantium nobis.',
+      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero necessitatibus temporibus unde repellendus facilis id possimus, cum eveniet.',
   },
   {
     img: './img/img-4.jpeg',
     fullname: 'Mark humming',
     position: 'Artist',
     review:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero necessitatibus temporibus unde repellendus facilis id possimus, cum eveniet quod nulla, iusto a debitis. Ipsa vitae deserunt quos culpa enim laboriosam perspiciatis commodi amet accusantium nobis.',
+      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero necessitatibus temporibus unde repellendus facilis id possimus lorem lorem lorem.',
   },
 ]
 
@@ -62,3 +62,14 @@ const prevReview = () => {
 showData()
 nextBtn.addEventListener('click', nextReview)
 prevBtn.addEventListener('click', prevReview)
+
+// toggle
+
+const toggle = document.getElementById('menu-icon')
+const links = document.getElementById('links')
+
+toggle.addEventListener('click', () => {
+  console.log('clicked')
+  console.log(links)
+  links.classList.toggle('show-links')
+})
